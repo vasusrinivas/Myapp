@@ -1,8 +1,6 @@
--- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
---
--- Host: localhost    Database: spring-security-tutorial
+-- Host: localhost    Database: postgres
 -- ------------------------------------------------------
--- Server version	5.7.11-log
+-- Server version	PostgreSQL 9.6
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -31,13 +29,13 @@ CREATE TABLE `role` (
 
 
 --
--- Table structure for table `user`
+-- Table structure for table `app_user`
 --
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `app_user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user` (
+CREATE TABLE `app_user` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `active` int(11) DEFAULT NULL,
   `email` varchar(255) NOT NULL,
